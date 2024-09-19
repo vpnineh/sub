@@ -52,8 +52,9 @@ vless://318c375c-1f29-4b30-8875-2c4c54d7c38d@ip.sb:8080?encryption=none&security
 vless://d6ff33a6-03bf-4338-8a63-62ab284a9466@ip.sb:8080?encryption=none&security=none&type=ws&sni=feng4.l1ut8bi9.workers.dev&host=feng4.l1ut8bi9.workers.dev&path=%2f%3fed%3d2048#feng4_5
 vless://365de7de-77b2-4a62-aec3-66a6bd41813e@ip.sb:8080?encryption=none&security=none&type=ws&sni=feng5.ogazo8c3.workers.dev&host=feng5.ogazo8c3.workers.dev&path=%2f%3fed%3d2048#feng5_5
 vless://89c21153-67d9-4505-a25c-cef293500eb8@ip.sb:8080?encryption=none&security=none&type=ws&sni=feng6.4m-bq2ce.workers.dev&host=feng6.4m-bq2ce.workers.dev&path=%2f%3fed%3d2048#feng6_5
-vless://6f183280-b258-437a-a216-e83f7dece776@172.67.231.21:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_5
-vless://6f183280-b258-437a-a216-e83f7dece776@172.67.160.204:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_4
-vless://6f183280-b258-437a-a216-e83f7dece776@172.64.93.97:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_3
-vless://6f183280-b258-437a-a216-e83f7dece776@162.159.36.221:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_2
-vless://6f183280-b258-437a-a216-e83f7dece776@172.67.209.229:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_1
+vless://6f183280-b258-437a-a216-e83f7dece776@www.4chan.org:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_1
+vless://318c375c-1f29-4b30-8875-2c4c54d7c38d@www.4chan.org:8080?encryption=none&security=none&type=ws&sni=feng3.2n7y5pja.workers.dev&host=feng3.2n7y5pja.workers.dev&path=%2f%3fed%3d2048#feng3_1
+vless://6f183280-b258-437a-a216-e83f7dece776@www.ipget.net:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_2
+vless://6f183280-b258-437a-a216-e83f7dece776@xn--b6gac.eu.org:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_3
+vless://6f183280-b258-437a-a216-e83f7dece776@www.gov.ua:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_4
+vless://6f183280-b258-437a-a216-e83f7dece776@ip.sb:8080?encryption=none&security=none&type=ws&sni=901.dbodanwi.workers.dev&host=901.dbodanwi.workers.dev&path=%2f%3fed%3d2048#901.dbodanwi.workers.dev_5

@@ -5,51 +5,57 @@
   },
   "inbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hy2-in",
+      "type": "trojan",
+      "tag": "trojan-in",
       "listen": "::",
-      "listen_port": 5060,
-      "tcp_fast_open": true,
-      "tcp_multi_path": true,
-      "udp_fragment": true,
-      "udp_timeout": "1m",
+      "listen_port": 7443,
+      "sniff": true,
+      "sniff_override_destination": true,
       "domain_strategy": "prefer_ipv6",
-      "obfs": {
-        "type": "salamander",
-        "password": "TbXz5+W/YWNkGHRc+NGdD9p7oZV7J8yteRYhO1zrt5s="
-      },
       "users": [
         {
-          "password": "Tz8/hjj7y5fu+QJgXnTSZ7S8w1S76xVqsSAZNaEvusk="
+          "password": "72d1e1c3-1edd-4d3e-b389-4cf485edeb6b"
         }
       ],
-      "ignore_client_bandwidth": true,
       "tls": {
         "enabled": true,
-        "certificate_path": "/root/warp-folder/ca.crt",
-        "key_path": "/root/warp-folder/ca.key"
+        "server_name": "aws.amazon.com",
+	"alpn": ["h3", "spdy/3.1"],
+        "reality": {
+          "enabled": true,
+          "handshake": {
+            "server": "aws.amazon.com",
+            "server_port": 443
+          },
+          "private_key": "WKP2V4OxVHDWqg8e9NQVBX8til9vapFeq1teOmt3-mg",
+          "short_id": [
+            "eaa941a37aeb3aa3"
+          ]
+        }
       },
-      "brutal_debug": false
+      "transport": {
+        "type": "grpc"
+     }
     }
   ],
   "outbounds": [
     {
       "type": "wireguard",
       "tag": "wireguard-out",
-      "server": "engage.cloudflareclient.com",
-      "server_port": 2408,
+      "domain_strategy": "prefer_ipv6",
+      "server": "188.114.97.195",
+      "server_port": 4500,
       "system_interface": false,
       "interface_name": "wg0",
       "local_address": [
         "172.16.0.2/32",
-        "2606:4700:110:8c07:7900:79f5:6db6:b8a6/128"
+        "2606:4700:110:8ac0:9b6a:77d6:d1e3:6467/128"
       ],
-      "private_key": "aE3BYdO96f94yNcAbrzHHtic+FMMvnncEN8K5SqCb1Q=",
+      "private_key": "ANmUN2LxtUJfHknYsGgyl8TfLL094UnKmOtYGj4IZWk=",
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "pre_shared_key": "",
-      "reserved": "IKVX",
+      "reserved": "Elf4",
       "workers": 8,
       "mtu": 1280
            }
-     ]
+        ]
 }

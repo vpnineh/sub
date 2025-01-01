@@ -1,9 +1,3 @@
-//profile-title: base64:V2luZHNjcmliZSBvbiBIMiAoaGlkZGlmeSBvdXRib3VuZCk=
-//profile-update-interval: 48
-//subscription-userinfo: upload=1547483648; download=840034815488; total=966367641600; expire=1740774601
-//support-url:  https://t.me/F_NiREvil
-//profile-web-page-url: https://github.com/NiREvil
-
 {
   "log": {
     "level": "warn",

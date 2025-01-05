@@ -10,3 +10,4 @@ hy2://9bb452b106ffc217@207.148.22.93:443/?obfs=salamander&obfs-password=cd29099d
 hy2://1f17cdf0578a2860@45.76.0.86:443/?obfs=salamander&obfs-password=4b817757&insecure=1#CPI3
 #hy2://18240b2dfdd76484@[2a05:f480:2000:1384:5400:5ff:fe19:8b0a]:443/?obfs=salamander&obfs-password=d2648ec2&insecure=1#CPI4-ipv6
 hy2://18240b2dfdd76484@70.34.207.153:443/?obfs=salamander&obfs-password=d2648ec2&insecure=1#CPI4
+hysteria://195.154.184.5:22787?insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=11&downmbps=55&alpn=h3#🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.184.5:22787

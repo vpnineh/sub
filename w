@@ -1,8 +1,8 @@
 hy2://04bb42227f7c629c@77.91.87.167:2087?obfs=salamander&obfs-password=fd784f88798796c1&sni=www.google.com&insecure=1#🔒 HYSTERIA-UDP 🇸🇪 SE - W
 hy2://5a072771500faceb@150.241.77.174:33344/?insecure=1&sni=www.google.com&obfs=salamander&obfs-password=f64fc97d84ec14cf#🔒 HYSTERIA-UDP 🇸🇪 SE
-#hy2://c76f08e20fb6368b@150.241.77.182:11122/?insecure=1&sni=www.google.com&obfs=salamander&obfs-password=64da92df31fc63c1#🔒 HYSTERIA-UDP 🇸🇪  SE
+hy2://c76f08e20fb6368b@150.241.77.182:11122/?insecure=1&sni=www.google.com&obfs=salamander&obfs-password=64da92df31fc63c1#🔒 HYSTERIA-UDP 🇸🇪  SE
+hy2://9bb452b106ffc217@207.148.22.93:443?obfs=salamander&obfs-password=cd29099d&insecure=1&sni=207.148.22.93#🔒 HYSTERIA-UDP 🇺🇸 US
 #hy2://18240b2dfdd76484@70.34.207.153:443?obfs=salamander&obfs-password=d2648ec2&insecure=1&sni=70.34.207.153#🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207.153:443
-#hy2://9bb452b106ffc217@207.148.22.93:443?obfs=salamander&obfs-password=cd29099d&insecure=1&sni=207.148.22.93#🔒 HYSTERIA-UDP 🇺🇸 US-207.148.22.93:443
 #hy2://4e9ee29b39a28277@66.135.11.68:443/?obfs=salamander&obfs-password=13f7ba5f&insecure=1#CPI
 #hy2://9bb452b106ffc217@207.148.22.93:443/?obfs=salamander&obfs-password=cd29099d&insecure=1#CPI2
 #hy2://1f17cdf0578a2860@45.76.0.86:443/?obfs=salamander&obfs-password=4b817757&insecure=1#CPI3

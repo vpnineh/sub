@@ -1,54 +1,131 @@
 [
-{"remarks":"🇩🇪 1","dns":{"servers":["1.1.1.2","1.0.0.2"]},"policy":{"system":{"statsOutboundUplink":true,"statsOutboundDownlink":true}},"log":{"access":"","error":"","loglevel":"warning"},"inbounds":[{"tag":"socks","port":10808,"listen":"127.0.0.1","protocol":"socks","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}},{"tag":"http","port":10809,"listen":"127.0.0.1","protocol":"http","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}},{"tag":"api","port":9090,"listen":"127.0.0.1","protocol":"dokodemo-door","settings":{"udp":false,"address":"127.0.0.1","allowTransparent":false}}],"outbounds":[{
-            "tag": "proxy",
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "c.88981401.xyz",
-                        "port": 443,
-                        "users": [
-                            {
-                                "id": "c4258f50-fe5d-4b6c-9f09-5a193b7d34ef",
-                                "alterId": 0,
-                                "email": "IRCP",
-                                "security": "auto",
-                                "encryption": "none"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": false,
-                    "serverName": "blog.sooriland.blog",
-                    "fingerprint": "firefox",
-                    "show": false
-                },
-                "wsSettings": {
-                    "path": "/@ln2ray?ed=2560",
-                    "headers": {
-                        "Host": "blog.sooriland.blog",
-                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0"
-                    }
-                },
-                "sockopt": {
-                    "dialerProxy": "fragment",
-                    "tcpKeepAliveIdle": 100,
-                    "mark": 255
-                }
-            },
-            "mux": {
-                "enabled": true,
-                "concurrency": 8,
-                "xudpConcurrency": 8,
-                "xudpProxyUDP443": "reject"
-            }
+{
+  "dns" : {
+    "servers" : [
+      "1.1.1.2",
+      "1.0.0.2"
+    ]
+  },
+  "fakedns" : [
+    {
+      "ipPool" : "198.20.0.0\/15",
+      "poolSize" : 512
+    },
+    {
+      "ipPool" : "fc00::\/64",
+      "poolSize" : 512
+    }
+  ],
+  "inbounds" : [
+    {
+      "listen" : "127.0.0.1",
+      "port" : 1080,
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "ip" : "[::1]",
+        "udp" : true
+      },
+      "sniffing" : {
+        "destOverride" : [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled" : true,
+        "routeOnly" : true
+      },
+      "tag" : "socks"
+    }
+  ],
+  "log" : {
+    "access" : "",
+    "error" : "",
+    "loglevel" : "warning"
+  },
+  "outbounds" : [
+    {
+      "mux" : {
+        "concurrency" : 8,
+        "enabled" : true,
+        "xudpConcurrency" : 8,
+        "xudpProxyUDP443" : "reject"
+      },
+      "protocol" : "vless",
+      "settings" : {
+        "vnext" : [
+          {
+            "address" : "c.88981401.xyz",
+            "port" : 443,
+            "users" : [
+              {
+                "encryption" : "none",
+                "id" : "c4258f50-fe5d-4b6c-9f09-5a193b7d34ef"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings" : {
+        "network" : "ws",
+        "security" : "tls",
+        "sockopt" : {
+          "dialerProxy" : "fragment",
+          "tcpKeepAliveIdle" : 100
         },
-{"tag": "fragment","protocol":"freedom","settings":{"domainStrategy":"AsIs","fragment":{"packets": "1-2","length": "4-6","interval": "8-15"}},"streamSettings":{"sockopt":{"TcpNoDelay": true,"tcpKeepAliveIdle":100,"mark": 255}}},{"tag":"direct","protocol":"freedom","settings":{}},{"tag":"block","protocol":"blackhole","settings":{"response":{"type":"http"}}}],"stats":{},"api":{"tag":"api","services":["StatsService"]},"routing":{"domainStrategy":"AsIs","rules":[{"type":"field","inboundTag":["api"],"outboundTag":"api"},{"type":"field","outboundTag":"block","domain":["geosite:category-ads-all"]},{"type":"field","outboundTag":"direct","domain":["geosite:cn"]},{"type": "field","outboundTag": "direct","ip": ["geoip:private","geoip:cn"]}]}}
+        "tlsSettings" : {
+          "allowInsecure" : false,
+          "fingerprint" : "firefox",
+          "serverName" : "blog.sooriland.blog"
+        },
+        "wsSettings" : {
+          "headers" : {
+            "Host" : "blog.sooriland.blog",
+            "User-Agent" : "Mozilla\/5.0 (X11; Linux x86_64; rv:127.0) Gecko\/20100101 Firefox\/127.0"
+          },
+          "path" : "\/@ln2ray?ed=2560"
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+        "domainStrategy" : "AsIs",
+        "fragment" : {
+          "interval" : "8-15",
+          "length" : "4-6",
+          "packets" : "1-2"
+        }
+      },
+      "streamSettings" : {
+        "sockopt" : {
+          "tcpKeepAliveIdle" : 100
+        }
+      },
+      "tag" : "fragment"
+    },
+    {
+      "protocol" : "freedom",
+      "settings" : {
+
+      },
+      "tag" : "direct"
+    },
+    {
+      "protocol" : "blackhole",
+      "settings" : {
+        "response" : {
+          "type" : "http"
+        }
+      },
+      "tag" : "block"
+    }
+  ],
+  "remarks" : "🇩🇪 1"
+}
+
 ,
 {
   "remarks": "🇩🇪 2",

@@ -181,3 +181,4 @@
   ]
 }
 ]
+hysteria2://7744a0a2-1972-402a-bc7d-129cee725586@xinyiyuan-ca.jiumaojiu.org:49926?insecure=0#%F0%9F%87%A8%F0%9F%87%A6%20%E5%8A%A0%E6%8B%BF%E5%A4%A74

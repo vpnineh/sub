@@ -1,141 +1,19 @@
 [
 
-{
-  "remarks": "🇩🇪 2",
-  "log": {
-    "access": "",
-    "error": "",
-    "loglevel": "warning"
-  },
-  "inbounds": [
-    {
-      "tag": "socks",
-      "port": 10808,
-      "listen": "127.0.0.1",
-      "protocol": "socks",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "routeOnly": false
-      },
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "allowTransparent": false
-      }
-    },
-    {
-      "tag": "http",
-      "port": 10809,
-      "listen": "127.0.0.1",
-      "protocol": "http",
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ],
-        "routeOnly": false
-      },
-      "settings": {
-        "auth": "noauth",
-        "udp": true,
-        "allowTransparent": false
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "tag": "proxy",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "braze.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "8a57150c-3e5d-4643-b5e9-d71f89315523",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "HDfYRPlc1.MAhsAAMInI.CC",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/BO5JWC2IX3sKTdq",
-          "headers": {
-            "Host": "HDfYRPlc1.MAhsAAMInI.CC"
-          }
-        },
-        "sockopt": {
-          "dialerProxy": "fragment",
-          "tcpKeepAliveIdle": 100,
-          "mark": 255,
-          "tcpNoDelay": true
-        }
-      }
-    },
-    {
-      "tag": "fragment",
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "AsIs",
-        "fragment": {
-          "packets": "tlshello",
-          "length": "10-20",
-          "interval": "10-20"
-        }
-      },
-      "streamSettings": {
-        "sockopt": {
-          "tcpNoDelay": true,
-          "tcpKeepAliveIdle": 100
-        }
-      }
-    },
-    {
-      "tag": "direct",
-      "protocol": "freedom",
-      "settings": {}
-    },
-    {
-      "tag": "block",
-      "protocol": "blackhole",
-      "settings": {
-        "response": {
-          "type": "http"
-        }
-      }
-    }
-  ]
-}
+  
+  {"remarks":"🇩🇪 1","log": {},"inbounds": [{"listen": "127.0.0.1","settings": {"ota": true,"level": 8,"network": "tcp,udp","method": "chacha20-ietf-poly1305","password": "123456","udp": false},"protocol": "shadowsocks","port": 10808,"tag": "socks"},{"listen": "127.0.0.1","settings": {"auth": "noauth","userLevel": 8,"udp": true},"protocol": "socks","port": 1087,"tag": "directSocks"},{"listen": "[::1]","settings": {"address": "[::1]"},"protocol": "dokodemo-door","port": 62789,"tag": "api"},{"listen": "127.0.0.1","settings": {"port": 53,"timeout": 10,"network": "tcp,udp","address": "1.1.1.1","userLevel": 0},"protocol": "dokodemo-door","port": 62790,"tag": "inDns"}],"outbounds": [{"streamSettings": {"network": "ws","tlsSettings": {"alpn": ["h2","http/1.1"],"serverName": "FRAG2.mAhSaAMini.Cc","fingerprint": "chrome","allowInsecure": false,"show": false},"wsSettings": {"headers": {"Host": "FRAG2.mAhSaAMini.Cc"},"path": "/CPI"},"sockopt": {"tcpNoDelay": true,"tcpKeepAliveIdle": 100,"dialerProxy": "fragment","mark": 255},"security": "tls"},"settings": {"vnext": [{"port": 2087,"address": "nodejs.org","users": [{"id": "6006efbc-2751-44c5-8789-d38304d4303a","alterId": 0,"flow": "","security": "auto","email": "t@t.tt","encryption": "none"}]}]},"protocol": "vless","tag": "proxy"},{"streamSettings": {"sockopt": {"tcpKeepAliveIdle": 100,"tcpNoDelay": true}},"settings": {"fragment": {"length": "10-20","packets": "tlshello","interval": "10-20"},"domainStrategy": "AsIs"},"protocol": "freedom","tag": "fragment"},{"protocol": "freedom","settings": {},"tag": "direct"},{"protocol": "blackhole","settings": {"response": {"type": "http"}},"tag": "block"}],"api": {"tag": "api","services": ["StatsService"]},"dns": {"disableFallbackIfMatch": true,"servers": [{"skipFallback": false,"address": "8.8.8.8"}],"disableCache": true,"queryStrategy": "UseIP","disableFallback": true,"tag": "dnsQuery"},"stats": {},"routing": {"rules": [{"inboundTag": ["api"],"type": "field","outboundTag": "api","enabled": true},{"id": "5627785659655799759","outboundTag": "proxy","port": "0-65535","type": "field","enabled": true}],"domainStrategy": "AsIs"},"policy": {"levels": {"8": {"bufferSize": 0,"statsUserUplink": false,"uplinkOnly": 1,"downlinkOnly": 1,"statsUserDownlink": false,"handshake": 4,"connIdle": 30}},"system": {"statsOutboundUplink": true,"statsInboundDownlink": true,"statsInboundUplink": true,"statsOutboundDownlink": true}},"transport": {}}
+  ,
+  
+  {"remarks": "🇩🇪 2","log": {"access": "","error": "","loglevel": "warning"},"inbounds": [{"tag": "socks","port": 10808,"listen": "127.0.0.1","protocol": "socks","sniffing": {"enabled": true,"destOverride": ["http","tls"],"routeOnly": false},"settings": {"auth": "noauth","udp": true,"allowTransparent": false}},{"tag": "http","port": 10809,"listen": "127.0.0.1","protocol": "http","sniffing": {"enabled": true,"destOverride": ["http","tls"],"routeOnly": false},"settings": {"auth": "noauth","udp": true,"allowTransparent": false}}],"outbounds": [{"tag": "proxy","protocol": "vless","settings": {"vnext": [{"address": "braze.com","port": 443,"users": [{"id": "8a57150c-3e5d-4643-b5e9-d71f89315523","alterId": 0,"email": "t@t.tt","security": "auto","encryption": "none","flow": ""}]}]},"streamSettings": {"network": "ws","security": "tls","tlsSettings": {"allowInsecure": false,"serverName": "HDfYRPlc1.MAhsAAMInI.CC","alpn": ["h2","http/1.1"],"fingerprint": "chrome","show": false},"wsSettings": {"path": "/BO5JWC2IX3sKTdq","headers": {"Host": "HDfYRPlc1.MAhsAAMInI.CC"}},"sockopt": {"dialerProxy": "fragment","tcpKeepAliveIdle": 100,"mark": 255,"tcpNoDelay": true}}},{"tag": "fragment","protocol": "freedom","settings": {"domainStrategy": "AsIs","fragment": {"packets": "tlshello","length": "10-20","interval": "10-20"}},"streamSettings": {"sockopt": {"tcpNoDelay": true,"tcpKeepAliveIdle": 100}}},{"tag": "direct","protocol": "freedom","settings": {}},{"tag": "block","protocol": "blackhole","settings": {"response": {"type": "http"}}}]}
   ,
 
-{ "remarks": "🇩🇪 3", "log": { "access": "", "error": "", "loglevel": "warning" }, "inbounds": [ { "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "sniffing": { "enabled": true, "destOverride": [ "http", "tls" ], "routeOnly": false }, "settings": { "auth": "noauth", "udp": true, "allowTransparent": false } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "sniffing": { "enabled": true, "destOverride": [ "http", "tls" ], "routeOnly": false }, "settings": { "auth": "noauth", "udp": true, "allowTransparent": false } } ], "outbounds": [ { "tag": "proxy", "protocol": "vless", "settings": { "vnext": [ { "address": "braze.com", "port": 2053, "users": [ { "id": "97b494d8-56ee-49d9-cdf5-7d0df2929ee3", "alterId": 0, "email": "t@t.tt", "security": "auto", "encryption": "none", "flow": "" } ] } ] }, "streamSettings": { "network": "ws", "security": "tls", "tlsSettings": { "allowInsecure": false, "serverName": "FrAg2.MAhsaamIni.cc", "alpn": [ "h2", "http/1.1" ], "fingerprint": "chrome", "show": false }, "wsSettings": { "path": "/CPI", "headers": { "Host": "FrAg2.MAhsaamIni.cc" } }, "sockopt": { "dialerProxy": "fragment", "tcpKeepAliveIdle": 100, "mark": 255, "tcpNoDelay": true } } }, { "tag": "fragment", "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "fragment": { "packets": "tlshello", "length": "10-20", "interval": "10-20" } }, "streamSettings": { "sockopt": { "tcpNoDelay": true, "tcpKeepAliveIdle": 100 } } }, { "tag": "direct", "protocol": "freedom", "settings": {} }, { "tag": "block", "protocol": "blackhole", "settings": { "response": { "type": "http" } } } ], "routing": { "domainStrategy": "AsIs", "rules": [ { "type": "field", "inboundTag": [ "api" ], "outboundTag": "api", "enabled": true }, { "id": "5627785659655799759", "type": "field", "port": "0-65535", "outboundTag": "proxy", "enabled": true } ] } }
+  { "remarks": "🇩🇪 3", "log": { "access": "", "error": "", "loglevel": "warning" }, "inbounds": [ { "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "sniffing": { "enabled": true, "destOverride": [ "http", "tls" ], "routeOnly": false }, "settings": { "auth": "noauth", "udp": true, "allowTransparent": false } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "sniffing": { "enabled": true, "destOverride": [ "http", "tls" ], "routeOnly": false }, "settings": { "auth": "noauth", "udp": true, "allowTransparent": false } } ], "outbounds": [ { "tag": "proxy", "protocol": "vless", "settings": { "vnext": [ { "address": "braze.com", "port": 2053, "users": [ { "id": "97b494d8-56ee-49d9-cdf5-7d0df2929ee3", "alterId": 0, "email": "t@t.tt", "security": "auto", "encryption": "none", "flow": "" } ] } ] }, "streamSettings": { "network": "ws", "security": "tls", "tlsSettings": { "allowInsecure": false, "serverName": "FrAg2.MAhsaamIni.cc", "alpn": [ "h2", "http/1.1" ], "fingerprint": "chrome", "show": false }, "wsSettings": { "path": "/CPI", "headers": { "Host": "FrAg2.MAhsaamIni.cc" } }, "sockopt": { "dialerProxy": "fragment", "tcpKeepAliveIdle": 100, "mark": 255, "tcpNoDelay": true } } }, { "tag": "fragment", "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "fragment": { "packets": "tlshello", "length": "10-20", "interval": "10-20" } }, "streamSettings": { "sockopt": { "tcpNoDelay": true, "tcpKeepAliveIdle": 100 } } }, { "tag": "direct", "protocol": "freedom", "settings": {} }, { "tag": "block", "protocol": "blackhole", "settings": { "response": { "type": "http" } } } ], "routing": { "domainStrategy": "AsIs", "rules": [ { "type": "field", "inboundTag": [ "api" ], "outboundTag": "api", "enabled": true }, { "id": "5627785659655799759", "type": "field", "port": "0-65535", "outboundTag": "proxy", "enabled": true } ] } }
   ,
 
-{"remarks":"🇩🇪 4","log":{"access":"","error":"","loglevel":"warning"},"inbounds":[{"tag":"socks","port":10808,"listen":"127.0.0.1","protocol":"socks","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}},{"tag":"http","port":10809,"listen":"127.0.0.1","protocol":"http","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}}],"outbounds":[{"tag":"proxy","protocol":"vmess","settings":{"vnext":[{"address":"172.66.168.206","port":2096,"users":[{"id":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"email":"t@t.tt","security":"auto","encryption":"none","flow":""}]}]},"streamSettings":{"network":"ws","security":"tls","tlsSettings":{"allowInsecure":false,"serverName":"DE01.Sh-CloUDflARe.SbS","alpn":["h2","http/1.1"],"fingerprint":"chrome","show":false},"wsSettings":{"path":"/","headers":{"Host":"DE01.Sh-CloUDflARe.SbS"}},"sockopt":{"dialerProxy":"fragment","tcpKeepAliveIdle":100,"mark":255,"tcpNoDelay":true}}},{"tag":"fragment","protocol":"freedom","settings":{"domainStrategy":"AsIs","fragment":{"packets":"tlshello","length":"6-9","interval":"1-2"}},"streamSettings":{"sockopt":{"tcpNoDelay":true,"tcpKeepAliveIdle":100}}},{"tag":"direct","protocol":"freedom","settings":{}},{"tag":"block","protocol":"blackhole","settings":{"response":{"type":"http"}}}],"routing":{"domainStrategy":"AsIs","rules":[{"type":"field","inboundTag":["api"],"outboundTag":"api","enabled":true},{"id":"5465425548310166497","type":"field","outboundTag":"direct","domain":["domain:ir","geosite:cn"],"enabled":true},{"id":"5425034033205580637","type":"field","outboundTag":"direct","ip":["geoip:private","geoip:cn","geoip:ir"],"enabled":true},{"id":"5627785659655799759","type":"field","port":"0-65535","outboundTag":"proxy","enabled":true}]}}
+  {"remarks":"🇩🇪 4","log":{"access":"","error":"","loglevel":"warning"},"inbounds":[{"tag":"socks","port":10808,"listen":"127.0.0.1","protocol":"socks","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}},{"tag":"http","port":10809,"listen":"127.0.0.1","protocol":"http","sniffing":{"enabled":true,"destOverride":["http","tls"],"routeOnly":false},"settings":{"auth":"noauth","udp":true,"allowTransparent":false}}],"outbounds":[{"tag":"proxy","protocol":"vmess","settings":{"vnext":[{"address":"172.66.168.206","port":2096,"users":[{"id":"75a0885f-0ca5-42a4-8651-391cf8193154","alterId":0,"email":"t@t.tt","security":"auto","encryption":"none","flow":""}]}]},"streamSettings":{"network":"ws","security":"tls","tlsSettings":{"allowInsecure":false,"serverName":"DE01.Sh-CloUDflARe.SbS","alpn":["h2","http/1.1"],"fingerprint":"chrome","show":false},"wsSettings":{"path":"/","headers":{"Host":"DE01.Sh-CloUDflARe.SbS"}},"sockopt":{"dialerProxy":"fragment","tcpKeepAliveIdle":100,"mark":255,"tcpNoDelay":true}}},{"tag":"fragment","protocol":"freedom","settings":{"domainStrategy":"AsIs","fragment":{"packets":"tlshello","length":"6-9","interval":"1-2"}},"streamSettings":{"sockopt":{"tcpNoDelay":true,"tcpKeepAliveIdle":100}}},{"tag":"direct","protocol":"freedom","settings":{}},{"tag":"block","protocol":"blackhole","settings":{"response":{"type":"http"}}}],"routing":{"domainStrategy":"AsIs","rules":[{"type":"field","inboundTag":["api"],"outboundTag":"api","enabled":true},{"id":"5465425548310166497","type":"field","outboundTag":"direct","domain":["domain:ir","geosite:cn"],"enabled":true},{"id":"5425034033205580637","type":"field","outboundTag":"direct","ip":["geoip:private","geoip:cn","geoip:ir"],"enabled":true},{"id":"5627785659655799759","type":"field","port":"0-65535","outboundTag":"proxy","enabled":true}]}}
 ,
+  
   {"remarks":"🇩🇪 5","log": {},"inbounds": [{"tag": "socks","listen": "127.0.0.1","settings": {"ota": true,"method": "chacha20-ietf-poly1305","udp": false,"level": 8,"password": "123456","network": "tcp,udp"},"port": 10808,"protocol": "shadowsocks"},{"tag": "directSocks","listen": "127.0.0.1","settings": {"udp": true,"auth": "noauth","userLevel": 8},"port": 1087,"protocol": "socks"},{"tag": "api","listen": "[::1]","settings": {"address": "[::1]"},"port": 62789,"protocol": "dokodemo-door"},{"tag": "inDns","listen": "127.0.0.1","settings": {"port": 53,"address": "1.1.1.1","userLevel": 0,"network": "tcp,udp","timeout": 10},"port": 62790,"protocol": "dokodemo-door"}],"outbounds": [{"tag": "proxy","settings": {"vnext": [{"users": [{"id": "97b494d8-56ee-49d9-cdf5-7d0df2929ee3","flow": "","email": "","encryption": "none","level": 0}],"port": 2053,"address": "cdnjs.com"}]},"protocol": "vless","mux": {"concurrency": 50,"xudpConcurrency": 128,"xudpProxyUDP443": "allow","enabled": false},"streamSettings": {"network": "ws","sockopt": {"dialerProxy": "fragment","tcpNoDelay": true},"tlsSettings": {"serverName": "FRaG2.mAhsAaminI.cC","allowInsecure": true,"alpn": ["h2","http/1.1"],"fingerprint": "chrome"},"wsSettings": {"headers": {"Host": "FRaG2.mAhsAaminI.cC"},"path": "/CPI"},"security": "tls"}},{"tag": "fragment","settings": {"fragment": {"interval": "10-20","packets": "tlshello","length": "10-20"},"userLevel": 8},"protocol": "freedom","streamSettings": {"sockopt": {"tcpNoDelay": true}}}],"api": {"tag": "api","services": ["StatsService"]},"dns": {"disableFallbackIfMatch": true,"tag": "dnsQuery","disableCache": true,"disableFallback": true,"servers": [{"skipFallback": false,"address": "8.8.8.8"}],"queryStrategy": "UseIP"},"stats": {},"routing": {"domainStrategy": "IPIfNonMatch","rules": [{"outboundTag": "api","type": "field","inboundTag": ["api"]},{"outboundTag": "outDns","type": "field","inboundTag": ["inDns"]},{"outboundTag": "proxy","type": "field","inboundTag": ["dnsQuery"]},{"outboundTag": "direct","type": "field","inboundTag": ["directSocks"]}],"balancers": []},"policy": {"levels": {"8": {"handshake": 4,"uplinkOnly": 1,"statsUserUplink": false,"bufferSize": 0,"downlinkOnly": 1,"statsUserDownlink": false,"connIdle": 30}},"system": {"statsInboundUplink": true,"statsOutboundUplink": true,"statsOutboundDownlink": true,"statsInboundDownlink": true}}}
+
+
 ]

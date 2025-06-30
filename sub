@@ -1,19 +1,6 @@
-vless://275c1c05-9b08-499d-94e1-cd51c16adefe@94.182.134.121:2083?type=http&path=%2F&host=iranserver.com&security=none#🔒 VL-TCP-NONE 🇮🇷 IR-94.182.134.121:2083
-
-vless://7db53b99-b560-4d25-9b6d-b9bc2ee81398@185.143.235.201:2087?type=ws&security=tls&host=vip9.nikatel.store&path=%2F#🔒 VL-WS-TLS 🇮🇷 IR-185.143.235.201:2087
-
-vless://d3f3fd0b-7b5c-4070-d5dc-61f96641b507@185.201.49.94:58089?type=http&host=myket.ir&security=none#🔒 VL-TCP-NONE 🇮🇷 IR-185.201.49.94:58089
-
-vless://a7f5d152-0287-af42-bfbc-f8ce1e31d97e@5.182.46.64:2051?type=http&host=snapp.taxi&security=none#🔒 VL-TCP-NONE 🇮🇷 IR-5.182.46.64:2051
-
-vless://7db53b99-b560-4d25-9b6d-b9bc2ee81398@185.143.235.201:2087?type=ws&host=vip9.nikatel.store&path=/&security=tls&fp=chrome&sni=vip9.nikatel.store#%F0%9F%94%92VL-WS-TLS%F0%9F%87%AE%F0%9F%87%B7IR-185.143.235.201:2087
-
-vless://ae9539b5-70dd-41b5-9666-11a29559a840@84.47.233.110:59761?type=http&host=Fast.com&security=none#🔒 VL-TCP-NONE 🇮🇷 IR-84.47.233.110:59761
-
-vless://8b4c316e-f05a-413e-bda5-a7383a123a77@85.133.201.45:18818?type=http&host=85.133.201.45&security=none#🔒 VL-TCP-NONE 🇮🇷 IR-85.133.201.45:18818
-
-vless://456a6e1f-add6-4a45-9ede-2ccafebc48ad@85.133.201.174:3033?security=none#🔒 VL-TCP-NONE 🇮🇷 IR-85.133.201.174:3033
-
-vless://775facbf-b0be-47c7-9aef-07a78ab981fe@85.133.201.174:47532?type=ws&path=%2F&host=speedtest.net&security=none#🔒 VL-WS-NONE 🇮🇷 IR-85.133.201.174:47532
-
-vless://ef61e76c-1f6b-411a-9610-f4111f8ace90@92.114.20.23:12048?type=http&host=speedtest.net&security=none#🔒 VL-TCP-NA 🇮🇷 IR-92.114.20.23:12048
+vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.205.175:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#1🇩🇪
+vless://0c2093a4-6250-42c8-9808-cb9138bc9881@SvnTeam.fast.hosting-ip.com:80?security=none&type=ws&headerType=&path=%2F%40SvnProBot%3Fed%3D2560&host=shad.ir#2🇩🇪
+vless://153ee04c-dcc1-4ef8-a146-8fb31cec1f48@91.99.160.41:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#3🇩🇪
+vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.207.135:51615?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#4🇩🇪
+vless://36ee3f5a-3816-4c03-a324-47531167e53b@91.99.195.73:443?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#5🇩🇪
+vless://6f690965-3be3-43bb-9331-3ead6efb20aa@172.66.150.129:80?path=%2F%3Fed%3D2570&security=none&encryption=none&host=sib.sibzamini.dpdns.org&type=ws#6🇩🇪
